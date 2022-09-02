@@ -20,7 +20,7 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - customOffset
-                    }, 300);
+                    }, 100);
                     return false;
 
                 }
@@ -28,9 +28,8 @@
             });
            
         });
-
       });
-
+     
 
 
 $(document).ready(function(){
