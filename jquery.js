@@ -20,7 +20,7 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - customOffset
-                    }, 30000);
+                    }, 300);
                     return false;
 
                 }
