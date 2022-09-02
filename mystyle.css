@@ -506,6 +506,7 @@ background-color: #fafafa;
     height: 80px;
     width: 80px;
     overflow: hidden;
+    background-color: #fafafa;
 
 }
 
@@ -538,6 +539,7 @@ background-color: #fafafa;
     background-size: cover;
     background-position: center;
     transition: 0.2s ease-in-out; 
+    background-color: #fafafa;
 }
 
 .slick-next {
@@ -554,6 +556,7 @@ background-color: #fafafa;
     background-size: cover;
     background-position: center;
     transition: 0.2s ease-in-out; 
+    background-color: #fafafa;
 }
 
 
