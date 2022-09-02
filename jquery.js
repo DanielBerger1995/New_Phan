@@ -1,6 +1,6 @@
 
 
-        
+        $(document).ready(function(){
         $(function() {
             $('a[href*=\\#]:not([href=\\#])').on('click', function() {
                 
@@ -29,7 +29,7 @@
            
         });
 
-     
+      });
 
         $(window).scroll(function(){
     if($(this).scrollTop() > 100){
@@ -38,10 +38,11 @@
         $('#scroll').fadeOut();
     }
 });
-
+$(document).ready(function(){
 $('#scroll').click(function(){ 
     $("html, body").animate({ scrollTop: 0 }, 300); 
     return false; 
+});
 });
 
 $(document).ready(function(){
