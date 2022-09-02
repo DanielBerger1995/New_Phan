@@ -20,7 +20,7 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - customOffset
-                    }, 100);
+                    }, 1000);
                     return false;
 
                 }
@@ -41,7 +41,7 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 100);
+        $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
     });
 });
