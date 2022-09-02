@@ -20,9 +20,11 @@
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - customOffset
-                    }, 1000);
+                    },  { duration: 300
+                      
+                      });
                     return false;
-
+                   
                 }
             
             });
@@ -41,7 +43,9 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 1000);
+        $("html, body").animate({ scrollTop: 0 }, { duration: 300
+                      
+        });
         return false;
     });
 });
