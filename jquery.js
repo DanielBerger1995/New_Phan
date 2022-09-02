@@ -19,8 +19,8 @@
                 target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - customOffset
-                    }, (300));
+                        scrollTop: target.offset().top - customOffset(300)
+                    });
                     return false;
 
                 }
@@ -38,12 +38,7 @@
         $('#scroll').fadeOut();
     }
 });
-$(document).ready(function(){
-$('#scroll').click(function(){ 
-    $("html, body").animate({ scrollTop: 0 }, (300)); 
-    return false; 
-});
-});
+
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -54,7 +49,7 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 100);
+        $("html, body").animate({ scrollTop: 0 },(300));
         return false;
     });
 });
