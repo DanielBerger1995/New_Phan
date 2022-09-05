@@ -7,7 +7,7 @@
         $(function() {
             $('a[href*=\\#]:not([href=\\#])').on('click', function() {
                 
-              
+              var time = 3000;
                     if ($(window).width() < 950) {
                       var customOffset = 64;
                     }
@@ -25,7 +25,7 @@
                 if (target.length) {
                     $('body,html,document').animate({
                         scrollTop: target.offset().top - customOffset
-                    },  { duration: 3000
+                    },  { duration: time
                       
                       });
                     return false;
@@ -41,6 +41,7 @@
 
 $(document).ready(function(){
     $(window).scroll(function(){
+      var time = 3000;
         if($(this).scrollTop() > 100){
             $('#scroll').fadeIn();
         }else{
@@ -48,7 +49,7 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("body,html,document").animate({ scrollTop: 0 }, { duration: 3000
+        $("body,html,document").animate({ scrollTop: 0 }, { duration: time
                       
         });
         return false;
