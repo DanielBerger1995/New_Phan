@@ -25,7 +25,7 @@
                 if (target.length) {
                     $('body,html,document').animate({
                         scrollTop: target.offset().top - customOffset
-                    },  { duration: time, easing: 'swing'
+                    },  { duration: time
                       
                       });
                     return false;
