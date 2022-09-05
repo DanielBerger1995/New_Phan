@@ -83,7 +83,7 @@ $(window).resize(function() {
 $(document).ready(function(){
     $("#lighthouse_event1").hover(function(){
         if ($(window).width() > 950) {
-      $(".lighthouse_event_bg1").stop().slideToggle(300);
+      $(".lighthouse_event_bg1").stop().fadeToggle(300);
       $(".lighthouse_event_text1").stop().fadeToggle(500);
         }
         else {
@@ -95,7 +95,7 @@ $(document).ready(function(){
   $(document).ready(function(){
     $("#lighthouse_event2").hover(function(){
         if ($(window).width() > 950) {
-      $(".lighthouse_event_bg2").stop().slideToggle(300);
+      $(".lighthouse_event_bg2").stop().fadeToggle(300);
       $(".lighthouse_event_text2").stop().fadeToggle(500);
         }
         else {

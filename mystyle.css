@@ -380,7 +380,7 @@ margin-right: 50px;
 .lighthouse_event_bg {
     z-index: 2;
     border-radius: 16px;
-    padding: 50px 20px;
+    padding: 50px 30px 20px 30px;
     display: none;
    
     height: 100%;
@@ -482,21 +482,23 @@ background-color: #fafafa;
     padding: 20px 40px;
     height: auto;
     width: 100%;
+    height: 100%;
    
 }
 
 .slide_text {
     width: 100%;
+    
 }
 
 .slide_img {
-    height: 60%;
-    width: 100%;
-    object-fit: contain;
+    height: 50%;
+    
+    object-fit: fill;
 }
 
 .slide_img img {
-   width: 100%;
+    width: 100%;
    height: 100%;
   
 }
@@ -563,12 +565,13 @@ background-color: #fafafa;
 
 
 .slick-dots {
+    
 	display: flex;
 	justify-content: center;
     align-items: center;
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 1rem 0;
-	
+	height: 12px;
 	list-style-type: none;
 }
 li {
@@ -581,7 +584,7 @@ li {
 			width: 10px;
 			height: 10px;
 			padding: 0;
-			
+			cursor: pointer;
 			border: none;
 			border-radius: 100%;
 			background-color: It #dadada;
@@ -809,6 +812,8 @@ display: flex;
 
 .phanslide img {
 width: 100%;
+height: 100%;
+height: auto;
 border-radius: 16px;
 transition: 0.2s ease-in-out;
 }
@@ -1077,7 +1082,7 @@ height: 700px;
             margin: 20px 0;
             border-radius: 16px;
            
-            height: 300px;
+            height: auto;
             width: 100%;
             overflow: hidden;
             position: static;
@@ -1115,34 +1120,29 @@ height: 700px;
         .lighthouse_event_bg {
             z-index: 2;
             border-radius: 0px;
-            padding-top: 50px;
-            display: inherit;
            
+            display: inherit;
+            padding: 30px;
             height: 100%;
             width: 50%;
            
             opacity: 1;
             text-align: center;
+           
         }
         
       
 
-        .lighthouse_event_text1 {
+        .lighthouse_event_text {
     width: 100%;
             display: initial;
+            margin: auto 0;
+            
         }
         
-        .lighthouse_event_text2 {
-            width: 100%;
-            display: initial;
-        }
-        
-        .lighthouse_event_text3 {
-            width: 100%;
-            display: initial;
-        }
+      
 .slider{
-    width: 80%
+    width: calc(80% + 40px);
     
     }
     
@@ -1250,7 +1250,7 @@ height: 700px;
      
        
         .phanslider_container {
-            width: 80%;
+            width: calc(80% + 40px);
         }
 
 
