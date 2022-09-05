@@ -1,9 +1,7 @@
 
 
 
-$(document).ready(function(){
-    document.getElementById('myVideo').play();
-  });
+
 
      $(document).ready(function(){
         $(function() {
