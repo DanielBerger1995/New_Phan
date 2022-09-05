@@ -1,7 +1,10 @@
 
 
+
+
+
         $(document).ready(function(){
-        
+        $(function() {
             $('a[href*=\\#]:not([href=\\#])').on('click', function() {
                 
               
@@ -18,7 +21,7 @@
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
                 if (target.length) {
-                    $('html,body').animate({
+                    $('body,html,document').animate({
                         scrollTop: target.offset().top - customOffset
                     },  { duration: 300
                       
@@ -29,7 +32,7 @@
             
             });
            
-       
+        });
       });
      
 
@@ -43,7 +46,7 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, { duration: 300
+        $("body,html,document").animate({ scrollTop: 0 }, { duration: 300
                       
         });
         return false;
