@@ -1,5 +1,5 @@
 
-
+$(window).load(function(){
         $(document).ready(function(){
         
             $('a[href*=\\#]:not([href=\\#])').on('click', function() {
@@ -29,7 +29,7 @@
             
             });
            
-       
+          });
       });
      
 
