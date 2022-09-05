@@ -25,7 +25,7 @@
                 if (target.length) {
                     $('body,html,document').animate({
                         scrollTop: target.offset().top - customOffset
-                    },  { duration: 600
+                    },  { duration: 3000
                       
                       });
                     return false;
@@ -48,7 +48,7 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("body,html,document").animate({ scrollTop: 0 }, { duration: 600
+        $("body,html,document").animate({ scrollTop: 0 }, { duration: 3000
                       
         });
         return false;
