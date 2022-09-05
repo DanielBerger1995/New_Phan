@@ -20,10 +20,12 @@
                 
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+
+                
                 if (target.length) {
                     $('body,html,document').animate({
                         scrollTop: target.offset().top - customOffset
-                    },  { duration: 300
+                    },  { duration: 600
                       
                       });
                     return false;
@@ -46,7 +48,7 @@ $(document).ready(function(){
         }
     });
     $('#scroll').click(function(){
-        $("body,html,document").animate({ scrollTop: 0 }, { duration: 300
+        $("body,html,document").animate({ scrollTop: 0 }, { duration: 600
                       
         });
         return false;
