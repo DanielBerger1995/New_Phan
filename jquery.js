@@ -10,12 +10,14 @@
               var time = 500;
                     if ($(window).width() < 950) {
                       var customOffset = 64;
+                      var pauseTime = 100;
                     }
                  
 
                 
                     else {
                         var customOffset = 70;
+                        var pauseTime = 0;
                     }
                 
                 var target = $(this.hash);
@@ -23,11 +25,11 @@
 
                 
                 if (target.length) {
-                    $('body,html,document').animate({
+                    $('body,html,document').delay(pauseTime).animate({
                         scrollTop: target.offset().top - customOffset
-                    },  { duration: time
+                    },  { duration: time}
                       
-                      });
+                      );
                     return false;
                    
                 }

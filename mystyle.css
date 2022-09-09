@@ -131,6 +131,7 @@ nav {
     height: 100vh;
     width: 100vw;
     background-color: white;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
 .burger_menu_wrapper {
@@ -1032,14 +1033,14 @@ height: 700px;
         margin: 0 auto;
         width: 80%;
         height: auto;
-        background-color: grey;
+  
         }
         
         .what_is_phantribe_image {
 
             width: 100%;
             height: auto;
-            background-color: black;
+            
             display: flex;
            justify-content: center;
            object-fit: cover;
@@ -1048,7 +1049,7 @@ height: 700px;
         }
 
         .what_is_phantribe_image img {
-        margin-left: 40%;
+        margin-left: 30%;
          height: 100%;
         }
 
@@ -1139,8 +1140,6 @@ height: 700px;
             margin: auto 0;
             
         }
-        
-      
 .slider{
     width: calc(80% + 40px);
     
@@ -1304,21 +1303,82 @@ height: 700px;
 
     @media(max-width:580px) {
 
-       
+        .what_is_phantribe {
+          
+    height: 900px;
+        }
+
+        
+        .lighthouse_event {
+            border-radius: 16px;
+            overflow: visible;
+            height: 440px;
+            width: 100%;
+            background-color: yellow;
+            position: relative;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            
+
+            
+            
+        }
+
+
+        .lighthouse_event:nth-child(2) {
+            flex-direction: column;
+        }
 
         .lighthouse_event_img {
-          width: 30%;
+            height: 30%;
+            width: 100%;
+            position: initial;
+            border-radius: 0px;
+            object-fit: cover;
+       margin: 0;
+            left: 0;
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+            border-radius: 16px 16px 0 0;
            
-          
-        }
+            
+                  
+                }
+.img1, .img2 {
+    object-position: 0 -100px;
+}
 
-        .lighthouse_event_bg {
+                .img3 {
+                    object-position: 0 -30px;
+                }
+
+
+                .lighthouse_event_img img {
+                    width: 100%;
+                    height: auto;
+                    
+                }
+
+       
+  .lighthouse_event_bg{
+    display: inherit;
+    height: 70%;
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+    opacity: 1;
+   
+  }
         
-            width: 70%;
-           
-        }
-     
-
+      .lighthouse_event_text {
+        display: flex;
+        flex-direction: column;
+       
+      }
+.lighthouse_icon {
+    display: initial;
+    top: calc(30% - 30px)
+}
 
 
         .lighthouse_event_text {
