@@ -9,6 +9,7 @@
 
 
 
+
 h1 {
     font-size: 2.5rem;
     font-family: inter;
@@ -250,11 +251,13 @@ nav {
     
 }
 .slogan {
-    font-size: 6vw;
+    text-align: center;
+    width: 65%;
+    font-size: 4vw;
     font-family: inter;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -326,7 +329,7 @@ margin-right: 50px;
    
     height: auto;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .lighthouse_events_container {
@@ -340,6 +343,7 @@ margin-right: 50px;
 }
 
 .lighthouse_event {
+    cursor: pointer;
     border-radius: 16px;
    
     height: 400px;
@@ -381,12 +385,15 @@ margin-right: 50px;
 .lighthouse_event_bg {
     z-index: 2;
     border-radius: 16px;
-    padding: 50px 30px 20px 30px;
+    padding: 80px 30px 20px 30px;
+   
     display: none;
    
     height: 100%;
     width: 100%;
     opacity: 0.8;
+    text-align: center;
+    
     
 }
 
@@ -411,6 +418,7 @@ margin-right: 50px;
 }
 
 .lighthouse_event_text {
+    margin: auto 0;
     font-size: 30px;
     font-family: inter;
     font-weight: bold;
@@ -481,28 +489,50 @@ background-color: #fafafa;
 
 .slidewrap {
     padding: 20px 40px;
-    height: auto;
+    height: 600px;
     width: 100%;
-    height: 100%;
+    position: relative;
    
 }
 
 .slide_text {
+    margin-top: 16px;
     width: 100%;
     
 }
 
 .slide_img {
+    position: relative;
+   
     height: 50%;
     
     object-fit: fill;
+    display: flex;
+    justify-content: center;
+ 
 }
 
 .slide_img img {
-    width: 100%;
+   
+    width: auto;
    height: 100%;
   
 }
+
+.watch_video {
+   padding: 10px 0;
+    background-color: #E77258;
+    color: white;
+    border-radius: 16px;
+    width: 140px;
+    text-align: center;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
 
 .slick-arrow {
     cursor: pointer;
@@ -602,7 +632,7 @@ li {
 
 
         .clubs_container {
-            padding: 50px 0;
+            padding: 100px 0;
             width: 100%;
             height: auto;
             background-color: white;
@@ -621,10 +651,11 @@ li {
 
         .clubs_img {
        
-            width: 50%;
+            width: 40%;
             height: 100%;
             display: flex;
             justify-content: center;
+            object-fit: contain;
 
         }
 
@@ -638,7 +669,7 @@ li {
            padding-left: 80px;
             height: auto;
             
-            width: 50%;
+            width: 60%;
            
 
         }
@@ -706,16 +737,129 @@ display: flex;
     height: 224px;
     width: 300px;
     background-color: white;
-    padding-top: 20px;
+    padding: 20px 30px;
+    border: solid 2px #fafafa;
+    transition: 0.2s ease-in-out;
 }
 
-.feature_icon {
+
+
+
+.icon_wrapper {
+    position: relative;
+    border-radius: 100px;
+    margin: 0 auto;
+    height: 60px;
     width: 60px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.icon_wrapper img {
+    width: 30px;
+}
+
+.icon_tribe{
+    background-color: #FBE6E1;
+}
+
+.icon_events{
+    background-color: #EAF0DA;
+}
+
+.icon_challenges{
+    background-color: #D9DFE6;
+}
+
+.icon_activity{
+    background-color: #FCF2DB;
+}
+
+.icon_phanspective{
+    background-color: #D3E1DF;
+}
+
+.icon_tracking{
+    background-color: #FBE6E1;
+}
+
+
+.feature_icon {
+    
+    transition: 0.2s ease-in-out;
+    transform-origin: center center;
+
+}
+
+.feature_box:nth-child(1):hover{
+    border: solid 2px #F4BFB4;
+}
+
+
+.feature_box:nth-child(1):hover .feature_icon_tribe {
+    scale: 1.1;
+}
+
+.feature_box:nth-child(2):hover{
+    border: solid 2px #CBDAA3;
+}
+
+
+.feature_box:nth-child(2):hover .feature_icon_events {
+    scale: 1.1;
+}
+
+
+.feature_box:nth-child(3):hover{
+    border: solid 2px #9FB1C1;
+}
+
+
+.feature_box:nth-child(3):hover .feature_icon_challenges {
+    scale: 1.1;
+}
+
+
+.feature_box:nth-child(4):hover{
+    border: solid 2px #F9DFA4;
+}
+
+
+.feature_box:nth-child(4):hover .feature_icon_activity {
+    scale: 1.1;
+}
+
+
+.feature_box:nth-child(5):hover{
+    border: solid 2px #92B4B0;
+}
+
+
+.feature_box:nth-child(5):hover .feature_icon_phanspective {
+    scale: 1.1;
+}
+
+
+.feature_box:nth-child(6):hover{
+    border: solid 2px #F4BFB4;
+}
+
+
+.feature_box:nth-child(6):hover .feature_icon_tracking {
+    scale: 1.1;
+}
+
+
+
+
 .feature_text {
+    margin-top: 8px;
     font-size: 16px;
     font-family: inter;
-    font-weight: 400;
+    font-weight: 200;
     color: #3a3a3a;
 }
 
@@ -725,7 +869,7 @@ display: flex;
     height: auto;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .content {
@@ -736,23 +880,26 @@ display: flex;
 }
 
 .content_text {
-    width: 50%;
+    width: 60%;
     padding-right: 80px;
     margin: auto 0;
 
 }
 
 .content_img {
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: auto;
 
     display: flex;
-            justify-content: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .content_img img {
-    width: 100%;
+ 
+   width: 100%;
+   height: 280px;
   
 }
 
@@ -904,33 +1051,189 @@ transition: 0.2s ease-in-out;
 }
 
 .choose_us_box {
-   width: 220px;
+    cursor: pointer;
+   width: 230px;
    height: auto;
    background-color: white;
    text-align: center;
    margin: 15px 0;
    border-radius: 16px;
-   padding-top: 20px;
+   padding: 20px 30px;
+   border: solid 2px #fafafa;
+   transition: 0.2s;
 }
 
-.choose_icon {
+
+.icon_wrapper {
+    position: relative;
+    border-radius: 100px;
+    margin: 0 auto;
+    height: 60px;
     width: 60px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.icon_wrapper img {
+    width: 30px;
+}
+
+.social_icon{
+    background-color: #EAF0DA;
+}
+
+.inclusion_icon{
+    background-color: #FBE6E1;
+}
+
+.content_icon{
+    background-color: #FCF2DB;
+}
+
+.branding_icon{
+    background-color: #D9DFE6;
+}
+
+.choose_icons {
+    
+    transition: 0.2s ease-in-out;
+    transform-origin: center center;
+
+}
+
+.choose_us_box:nth-child(1):hover{
+    border: solid 2px #EAF0DA;
+}
+
+
+.choose_us_box:nth-child(1):hover .choose_icon_social {
+    scale: 1.1;
+}
+
+.choose_us_box:nth-child(2):hover{
+    border: solid 2px #FBE6E1;
+}
+
+
+.choose_us_box:nth-child(2):hover .choose_icon_inclusion {
+    scale: 1.1;
+}
+
+.choose_us_box:nth-child(3):hover{
+    border: solid 2px #FCF2DB;
+}
+
+
+.choose_us_box:nth-child(3):hover .choose_icon_content {
+    scale: 1.1;
+}
+
+.choose_us_box:nth-child(4):hover{
+    border: solid 2px #D9DFE6;
+}
+
+
+.choose_us_box:nth-child(4):hover .choose_icon_branding {
+    scale: 1.1;
+}
+
+
+
+
 .choose_text {
+    margin-top: 8px;
     font-size: 16px;
     font-family: inter;
-    font-weight: 400;
+    font-weight: 200;
     color: #3a3a3a;
 }
 
+
+
 .contact_us {
+    padding: 50px 0;
     width: 100%;
-    height: 1000px;
-    background-color: brown;
+    height: calc(100vh - 70px);
+    background-color: #406283;
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+    align-items: center;
+}
+.contact_title {
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: inter;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
+.contact_title img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.contact_container {
+    width: 950px;
+    height: auto;
 
 
+}
+
+.contact_box {
+    border-radius: 16px;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+   
+}
+
+.contact_text {
+   
+    width: 40%;
+    text-align: left;
+    
+}
+
+.vertical_contact_line {
+    height: 200px;
+    width: 2px;
+    background-color: #fafafa;
+}
+
+.contact_icons_wrapper {
+height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+.contact_icons {
+   margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 200;
+    color: #3a3a3a;
+    line-height: 32px;
+}
+
+.contact_icons img {
+width: 40px;
+margin-right: 20px;
+}
 
 
 #scroll {
@@ -1089,6 +1392,7 @@ height: 700px;
             position: static;
             object-fit: none;
             display: flex;
+            
            
             
         }
@@ -1098,6 +1402,7 @@ height: 700px;
         }
 
         .lighthouse_event_img {
+           
             height: 100%;
             width: 50%;
             position: static;
@@ -1119,6 +1424,7 @@ height: 700px;
         }
 
         .lighthouse_event_bg {
+           
             z-index: 2;
             border-radius: 0px;
            
@@ -1150,21 +1456,21 @@ height: 700px;
     .clubs {
         width: 80%;
         
-        background-color: thistle;
+       
         display: flex;
         flex-direction: column-reverse;
         
     }
 
     .clubs_text {
-        background: chartreuse;
+       
         margin: auto 0;
         height: auto;
         width: 100%;
         padding: 0;
     }
     .clubs_img {
-        
+        margin-top: 50px;
         object-fit: cover;
    width: 100%;
         height: auto;
@@ -1224,16 +1530,15 @@ height: 700px;
 
         .content_text {
             width: 100%;
-            background-color: chartreuse;
             margin: auto 0;
             padding: 0;
         
         }
         
         .content_img {
-           
+            margin-top: 50px;
             width: 100%;
-            background-color: yellow;
+     
           
         
         }
@@ -1266,6 +1571,47 @@ height: 700px;
             margin: 15px 5px;
        
         }
+
+
+
+        .contact_container {
+            width: 80%;
+          
+           
+        }
+
+      
+.contact_box {
+    height: auto;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+
+        .vertical_contact_line {
+            width: 200px;
+    height: 2px;
+    background-color: #fafafa;
+
+    margin: 20px 0;
+        }
+
+        .contact_icons_wrapper {
+     
+                width: 250px;
+                
+               
+            }
+
+
+.contact_text {
+   
+    width: 80%;
+    text-align: center;
+    
+}
+
+    
 
         #scroll:hover {
             z-index: 100;
