@@ -1631,7 +1631,7 @@ nav {
             cursor:pointer;
             width:50px;
             height:50px;
-            background-color:#E77258;
+            background-color:#ffffff;
             text-indent:-9999px;
             display:none;
             -webkit-border-radius:100px;
@@ -1648,7 +1648,7 @@ nav {
             height:0;
             width:0;
             border:8px solid transparent;
-            border-bottom-color:#ffffff;
+            border-bottom-color:#FFC53D;
             transition : 0.2s ease-in-out; 
             
         }
